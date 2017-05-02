@@ -21,6 +21,7 @@ def identify_function(x):
 
 関数の出力値の総和は１のため、各出力が「確率」として解釈することができる
 '''
+
 def softmax(x):
     c = np.max(x)
     exp_a = np.exp(x-c)  #オーバーフロー対策
