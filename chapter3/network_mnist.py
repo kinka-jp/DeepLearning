@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 from dataset.mnist import load_mnist
 from chapter3Exercise import sigmoid,softmax
-
+from PIL import Image
 '''
 normalize:Trueの場合、入力画像の値を０〜１となるように正規化する
           Flaseの場合、入力画像の値が0~255のままにする
@@ -44,6 +44,7 @@ for i in range(len(x)):
         accuracy_cnt += 1
 
 print("Accuracy:"+str(float(accuracy_cnt)/len(x)))
+
 
 
 
